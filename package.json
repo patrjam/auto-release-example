@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/patrjam/auto-release-example#readme",
   "dependencies": {
+    "@semantic-release/changelog": "^5.0.1",
     "semantic-release": "^17.1.1"
   }
 }
