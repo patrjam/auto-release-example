@@ -1,0 +1,24 @@
+{
+  "name": "auto-release-example",
+  "version": "1.0.0",
+  "description": "Using semantic-release to autodeploy new version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic:release": "npx semantic-release --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrjam/auto-release-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrjam/auto-release-example/issues"
+  },
+  "homepage": "https://github.com/patrjam/auto-release-example#readme",
+  "dependencies": {
+    "semantic-release": "^17.1.1"
+  }
+}
