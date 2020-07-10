@@ -9,7 +9,7 @@
                 "changelogFile": "./src/examples/CHANGELOG.md",
                 "changelogTitle": "# Semantic Versioning Changelog"
             }
-       ] 
+       ],
         "@semantic-release/npm"
     ]
 }
