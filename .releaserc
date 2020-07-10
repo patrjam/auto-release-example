@@ -11,8 +11,8 @@
             }
        ],
        ["@semantic-release/npm", {
-            "npmPublish": true,
-            "tarballDir": "src"
+            "npmPublish": true, 
+            "pkgRoot": "src"
     }]
     ]
 }
