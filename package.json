@@ -1,6 +1,6 @@
 {
-  "name": "auto-release-example",
-  "version": "1.0.0",
+  "name": "@patrjam/auto-release-example",
+  "version": "0.0.0-development",
   "description": "Using semantic-release to autodeploy new version",
   "main": "index.js",
   "scripts": {
