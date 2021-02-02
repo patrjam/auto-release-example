@@ -1,0 +1,6 @@
+.github/
+src/
+package-lock.json 
+.releaserc
+Makefile
+.gitignore
