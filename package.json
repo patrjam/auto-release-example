@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"test OK\"",
-    "semantic:release": "npx semantic-release --debug"
+    "semantic:release": "npx semantic-release --debug",
+    "lint": "echo \"test lint\""
   },
   "repository": {
     "type": "git",
