@@ -16,9 +16,6 @@ jobs:
           node-version: "15.x"
         env: 
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
-      - run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-        env: 
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: docker build --build-arg "$NPM_TOKEN" -t auto_release -f ./Dockerfile .
         env: 
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
