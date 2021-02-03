@@ -14,8 +14,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "15.x"
+        env: 
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
       - run: echo ${{ secrets.MY_TEST }}
-      - run: docker build --build-arg NPM_TOKEN=${{ secrets.NPM_TOKEN }} -t auto_release -f ./Dockerfile .
+      - run: docker build --build-arg "$NPM_TOKEN" -t auto_release -f ./Dockerfile .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
