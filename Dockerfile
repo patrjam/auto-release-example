@@ -10,8 +10,6 @@ COPY . /home/node/app/
 
 WORKDIR /home/node/app/
 
-RUN npm config set https://registry.npmjs.org/:_authToken" $NPM_TOKEN
-
 RUN npm ci
 
 RUN npm run semantic:release
