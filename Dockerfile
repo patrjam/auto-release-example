@@ -11,3 +11,4 @@ WORKDIR /home/node/app/
 RUN npm ci
 
 RUN npm run semantic:release
+
