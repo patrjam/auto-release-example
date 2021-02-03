@@ -6,4 +6,4 @@ WORKDIR /home/node/app/
 
 RUN npm ci
 
-CMD /bin/bash -c "npx semantic-release --debug"
+CMD /bin/bash -c "npm run semantic:release"
