@@ -9,13 +9,15 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    container: 'node:lts-buster'
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "15.x"
-        env: 
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
-      - run: docker build --build-arg "$NPM_TOKEN" -t auto_release -f ./Dockerfile .
-        env: 
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm test
+      - run: git --version
+      - run: pwd
+      - run: ls -la
+      - run: npx semantic-release --debug
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
